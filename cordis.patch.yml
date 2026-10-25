@@ -1,0 +1,7 @@
+# dsh-workbuddy-out bundle patch
+#
+# 插入一行插件条目。id 必须与 index.mjs 的导出 name 一致，
+# 否则 profile 里会看到一条指向不存在插件的断行。
+- insert:
+    - id: dsh-workbuddy-out
+      name: 'dsh-workbuddy-out'

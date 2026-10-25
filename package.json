@@ -1,0 +1,64 @@
+{
+  "name": "dsh-workbuddy-out",
+  "version": "0.2.0",
+  "description": "WorkBuddy expert outsourcing for DeepSeek Harness: hand a task to a WorkBuddy CodeBuddy expert agent (slide decks, storyboards, speech scripts, reports) and read back its handoff document and artifacts. Spends the user's WorkBuddy credits, not this session's tokens.",
+  "private": true,
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "wb": "bin/wb.mjs"
+  },
+  "exports": {
+    ".": "./index.mjs",
+    "./icon": "./icon.svg",
+    "./lib/paths": "./lib/paths.mjs",
+    "./lib/config": "./lib/config.mjs",
+    "./lib/cli": "./lib/cli.mjs",
+    "./lib/token": "./lib/token.mjs",
+    "./lib/experts": "./lib/experts.mjs",
+    "./lib/run": "./lib/run.mjs",
+    "./lib/probe": "./lib/probe.mjs",
+    "./lib/auth": "./lib/auth.mjs",
+    "./lib/tmp-guard": "./lib/tmp-guard.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "bin/",
+    "lib/",
+    "test/",
+    "locale/",
+    "examples/",
+    "icon.svg",
+    "cordis.patch.yml",
+    "config.example.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node test/plugin-smoke.mjs && node test/timeout-and-tmp.mjs",
+    "doctor": "node bin/wb.mjs doctor --deep",
+    "list": "node bin/wb.mjs list",
+    "status": "node bin/wb.mjs status",
+    "login": "node bin/wb.mjs login",
+    "clean": "node bin/wb.mjs clean"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "workbuddy",
+    "codebuddy",
+    "expert",
+    "outsourcing"
+  ],
+  "license": "MIT"
+}

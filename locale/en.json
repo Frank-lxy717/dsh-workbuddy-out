@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "WorkBuddy Experts",
+    "description": "Hand tasks to WorkBuddy CodeBuddy expert agents (slide decks, storyboards, speech scripts) and read back their handoff document and artifacts. Spends the user's WorkBuddy credits instead of this session's tokens."
+  }
+}

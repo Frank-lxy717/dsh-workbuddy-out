@@ -1,0 +1,8 @@
+{
+  "_说明": "把这个文件复制到 %USERPROFILE%\\.dsh\\workbuddy-out\\config.json 后按需修改；所有字段都可省略。",
+  "cliPath": null,
+  "defaultTimeoutSec": 900,
+  "defaultModel": null,
+  "handoff": true,
+  "tmpCleanup": "auto"
+}
