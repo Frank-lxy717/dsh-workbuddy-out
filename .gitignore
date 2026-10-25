@@ -1,0 +1,17 @@
+# 依赖
+node_modules/
+
+# 运行时状态（正常情况下在 ~/.dsh/workbuddy-out，这里只是防止被 WORKBUDDY_OUT_STATE 指进来后误提交）
+state/
+*.jsonl
+
+# 临时文件
+*.log
+*.tmp
+*.tgz
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
